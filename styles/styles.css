@@ -1,0 +1,103 @@
+* {
+  font-family: gupter;
+  text-align: center;
+}
+p, b{
+  padding: 0;
+  margin: 0;
+}
+
+.header, .footer{
+  background-color: rgb(186, 124, 53);
+  color: rgb(255, 255, 255);
+}
+
+a {
+  text-decoration: none;
+}
+
+h1{
+  font-family:'Pacifico', cursive;
+  font-size: 4rem;
+}
+
+.slogan{
+  font-size: 1.3rem;
+}
+
+.banner {
+  background: linear-gradient(to right, rgba(186, 124, 53, 0.5), rgba(186, 124, 53, 0.5)), url(../images/background.webp);
+  height: 85vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+
+.container-img-cabañas{
+  position: relative;
+  height: 15rem;
+  width: 15rem;;
+  border-radius: 100%;
+  margin: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 0 15px 3px rgba(65, 42, 15, 0.85);
+}
+
+.img-cabañas{
+  width: 100%;
+  height: 100%;
+}
+
+.layer-img-cabañas{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(65, 42, 15, 0.85);
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 500ms ease-out;
+}
+
+.layer-img-cabañas p{
+  margin-top: 43%;
+}
+
+.container-img-cabañas:hover > .layer-img-cabañas{
+  opacity: 1;
+  visibility: visible;
+  
+}
+
+.services{
+  background-color: rgba(186, 124, 53, 0.5);
+}
+
+.service{
+  color: rgb(186, 124, 53);
+  font-size: 5rem;
+  margin: 1rem;
+}
+
+.btn, .input{
+  background-color: rgb(255, 255, 255);
+  border-radius: 5rem;
+}
+
+.sub-btn{
+  background-color: rgb(186, 124, 53);
+  border: solid 1px rgb(255, 255, 255);
+  border-radius: 5rem;
+  color: rgb(255, 255, 255);
+}
+
+.sub-btn:hover{
+  background-color: rgb(128, 80, 25);
+}
