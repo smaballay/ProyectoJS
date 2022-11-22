@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/Icono.png">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&display=swap&family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3de0ed934e.js" crossorigin="anonymous"></script>
+    <title>Cabañas Fraimonti - Reserva</title>
+</head>
+<body>
+    <header class="header d-none d-md-flex justify-content-between justify-content-lg-around p-2 px-5">
+    	<a href="../index.html"><img src="../images/LOGO_white.png" alt="logo" style="height:60px;"></a> 
+        <div class="d-flex align-items-center">
+        	<span id="usuario"></span>
+            <i class="fa-solid fa-circle-user m-2"></i>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-md p-2 px-4">
+        <div class="container-fluid">
+            <a class="d-md-none" href="../index.html"><img src="../images/LOGO_brown.png" alt="logo" style="height:60px;"></a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body m-auto text-center">
+                    <ul class="navbar-nav flex-grow-1 pe-3">
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="../index.html#cabanias">CABAÑAS</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="../index.html#servicios">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="../index.html#ubicacion">UBICACION</a>
+                        </li>
+                        <li class="nav-item mx-4">
+                            <a class="nav-link" href="#">CONTACTO</a>
+                        </li>
+                        <span id="usuarioMob" class="d-md-none mt-5"><a href="./pages/login.html" class="text-black">INICIAR SESION</a> | <a href="./pages/registro.html" class="login text-black">REGISTRARSE</a></span>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="valoresIngresados-container text-center p-3">
+            <div id="valoresIngresados" >
+                <h1 class="fs-1">Datos de reserva</h1>
+                <p class="mb-2"><b>Check In:</b> <span id="checkInP"></span> desde las 13:00hs </p>
+                <p class="mb-2"><b>Check Out:</b> <span id="checkOutP"></span> hasta las 10:00hs </p>
+                <div class="d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-moon"></i><p class="px-1 me-3" id="nochesP"></p>
+                    <i class="fa-solid fa-user"></i><p class="px-1" id="personasP"></p>
+                </div>
+            </div>
+        </section>
+        <section id="cabanias-container" class="container">
+
+        </section>
+    </main>
+
+    <footer class="footer p-3">
+        <div class="container">
+            <div class="row">
+                <div class="">
+                    <img class="m-2" src="../images/LOGO_white.png" alt="Logo" style="height:100px;">
+                    <div>
+                        <a href="https://www.facebook.com/fraimonti/" target="_blank"><img src="../images/icono_fb.png" alt="ir a facebook"></a>
+                        <a href="https://www.instagram.com/complejofraimonti/?hl=es" target="_blank"><img src="../images/icono_ig.png" alt="ir a instragram"></a>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center my-3">
+                    <h3>¿Querés recibir nuestras novedades y promociones?</h3>
+                    <div class="input-group mb-2">
+                        <input type="mail" class="form-control input">
+                        <button class="sub-btn">Suscribirse</button>
+                    </div>
+                </div>    
+            </div>
+            <div class="row mt-4">
+                <p>Desarrollado con fines educativos</p>
+            </div>
+        </div>
+    </footer>    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="../js/reserva.js"></script>
+</body>
+</html>

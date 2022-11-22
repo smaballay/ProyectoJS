@@ -2,6 +2,7 @@
   font-family: gupter;
   text-align: center;
 }
+
 p, b{
   padding: 0;
   margin: 0;
@@ -16,6 +17,31 @@ a {
   text-decoration: none;
 }
 
+.nav-link{
+  transition: all 0.7s ease;
+  position: relative;
+}
+
+.nav-link:hover{
+  color: rgb(186, 124, 53);
+}
+
+.nav-link:after{
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: rgb(186, 124, 53);
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+
+.nav-link:hover:after{
+  width: 100%;
+}
+
 h1{
   font-family:'Pacifico', cursive;
   font-size: 4rem;
@@ -25,9 +51,18 @@ h1{
   font-size: 1.3rem;
 }
 
-.banner {
+.carousel-inner{
+  height: 800px;
+}
+
+.carousel-img{
+  width: 100%;
+  height:auto;
+}
+
+.banner{
   background: linear-gradient(to right, rgba(186, 124, 53, 0.5), rgba(186, 124, 53, 0.5)), url(../images/background.webp);
-  height: 85vh;
+  min-height: 85vh;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -73,7 +108,6 @@ h1{
 .container-img-cabañas:hover > .layer-img-cabañas{
   opacity: 1;
   visibility: visible;
-  
 }
 
 .services{
@@ -86,18 +120,64 @@ h1{
   margin: 1rem;
 }
 
-.btn, .input{
+.input{
   background-color: rgb(255, 255, 255);
   border-radius: 5rem;
+  padding: 5px;
+  border: none;
 }
 
 .sub-btn{
-  background-color: rgb(186, 124, 53);
-  border: solid 1px rgb(255, 255, 255);
+  background-color: rgb(124, 81, 31);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-top-right-radius: 5rem;
+  border-end-end-radius: 5rem;
+  padding: 7px;
+}
+
+.btn-light, .btn-brown, .btn-lightbrown{
   border-radius: 5rem;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.btn-light{
+  background-color: rgb(255, 255, 255);
+}
+
+.btn-brown{
+  background-color: rgb(186, 124, 53);
   color: rgb(255, 255, 255);
 }
 
-.sub-btn:hover{
-  background-color: rgb(128, 80, 25);
+.btn-lightbrown{
+  background-color: rgba(202, 156, 103, 0.377);
+}
+
+.btn:hover{
+  background-color: rgb(124, 81, 31);
+  color: rgb(255, 255, 255);
+}
+
+.container-form{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+  background: rgba(92,51,21,0.75);
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.login-form{
+  max-width: 40rem;
+}
+
+.valoresIngresados-container{
+  background-color: rgba(186, 124, 53, 0.705);
+}
+
+.card-img{
+  height: 20rem;
 }
