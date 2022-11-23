@@ -1,9 +1,18 @@
 let btnLogin = document.getElementById('btnLogin');
 btnLogin.onclick = () =>{
-    let usuario = document.getElementById('usuarioInput').value;
-    localStorage.setItem('usuario', usuario);
-    let contrasenia = document.getElementById('contraseniaInput').value;
-    localStorage.setItem('contrasenia', contrasenia);
-    localStorage.setItem('registrado', true);
-    window.location.href='../../index.html';
+    if (document.querySelector("#checkbox:checked")){
+        let usuario = document.getElementById('usuarioInput').value;
+        localStorage.setItem('usuario', usuario);
+        let contrasenia = document.getElementById('contraseniaInput').value;
+        localStorage.setItem('contrasenia', contrasenia);
+        localStorage.setItem('registrado', true);
+        window.location.href='../../index.html';    
+    } else{
+        let usuario = document.getElementById('usuarioInput').value;
+        sessionStorage.setItem('usuario', usuario);
+        let contrasenia = document.getElementById('contraseniaInput').value;
+        sessionStorage.setItem('contrasenia', contrasenia);
+        sessionStorage.setItem('registrado', true);
+        window.location.href='../../index.html';   
+    }   
 };

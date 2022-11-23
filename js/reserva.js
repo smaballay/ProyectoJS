@@ -1,5 +1,17 @@
-usuario.innerText = `¡Bienvenido ${localStorage.getItem('usuario')}!`;
-usuarioMob.innerText = `¡Bienvenido ${localStorage.getItem('usuario')}!`;
+let registradoEnLs = localStorage.getItem('registrado');
+if (registradoEnLs){
+    let usuario = document.getElementById('usuario');
+    let usuarioMob = document.getElementById('usuarioMob');
+    usuario.innerText = `¡Bienvenido ${localStorage.getItem('usuario')}!`;
+    usuarioMob.innerText = `¡Bienvenido ${localStorage.getItem('usuario')}!`;
+}
+let registradoEnSs = sessionStorage.getItem('registrado');
+if (registradoEnSs){
+    let usuario = document.getElementById('usuario');
+    let usuarioMob = document.getElementById('usuarioMob');
+    usuario.innerText = `¡Bienvenido ${sessionStorage.getItem('usuario')}!`;
+    usuarioMob.innerText = `¡Bienvenido ${sessionStorage.getItem('usuario')}!`;
+}
 
 //Al no contar con una BBDD se establece una clase para crear las cabañas como objeto con sus atributos
 class Cabania{
