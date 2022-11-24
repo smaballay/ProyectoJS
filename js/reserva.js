@@ -1,16 +1,17 @@
+//Verifica si ya hay un usuario logeado en LS o SS y cambia el contenido del <span>
 let registradoEnLs = localStorage.getItem('registrado');
 if (registradoEnLs){
     let usuario = document.getElementById('usuario');
     let usuarioMob = document.getElementById('usuarioMob');
-    usuario.innerText = `¡Bienvenido ${localStorage.getItem('usuario')}!`;
-    usuarioMob.innerText = `¡Bienvenido ${localStorage.getItem('usuario')}!`;
+    usuario.innerHTML = `¡Bienvenido <a href="../pages/cuenta.html"><b>${localStorage.getItem('usuario')}</b></a>!`;
+    usuarioMob.innerHTML = `¡Bienvenido <a href="../pages/cuenta.html"><b>${localStorage.getItem('usuario')}</b></a>!`;
 }
 let registradoEnSs = sessionStorage.getItem('registrado');
 if (registradoEnSs){
     let usuario = document.getElementById('usuario');
     let usuarioMob = document.getElementById('usuarioMob');
-    usuario.innerText = `¡Bienvenido ${sessionStorage.getItem('usuario')}!`;
-    usuarioMob.innerText = `¡Bienvenido ${sessionStorage.getItem('usuario')}!`;
+    usuario.innerHTML = `¡Bienvenido <a href="../pages/cuenta.html"><b>${sessionStorage.getItem('usuario')}</b></a>!`;
+    usuarioMob.innerHTML = `¡Bienvenido <a href="../pages/cuenta.html"><b>${sessionStorage.getItem('usuario')}</b></a>!`;
 }
 
 //Al no contar con una BBDD se establece una clase para crear las cabañas como objeto con sus atributos
