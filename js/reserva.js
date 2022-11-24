@@ -58,7 +58,7 @@ cabaniasOp.forEach((cabania)=>{
     <div class="card my-3">
         <div class="row g-0">
             <div class="col-md-4">
-                <img src="${cabania.img}" class="img-fluid rounded-start" alt="Imagen de cabaña">
+                <img src="${cabania.img}" class="img-fluid rounded" alt="Imagen de cabaña">
             </div>
             <div class="col-md-5 mb-3 d-flex align-items-center">
                 <div class="card-body">

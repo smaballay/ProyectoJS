@@ -2,7 +2,6 @@
 let checkInInput = document.getElementById('checkInInput');
 let checkOutInput = document.getElementById('checkOutInput');
 
-
 //Al cargar la página se establece como fecha mínima de ingreso la actual y de egreso el día siguiente
 window.onload = () => {
     let hoy = new Date();
@@ -31,15 +30,15 @@ let registradoEnLs = localStorage.getItem('registrado');
 if (registradoEnLs){
     let usuario = document.getElementById('usuario');
     let usuarioMob = document.getElementById('usuarioMob');
-    usuario.innerText = `¡Bienvenido ${localStorage.getItem('usuario')}!`;
-    usuarioMob.innerText = `¡Bienvenido ${localStorage.getItem('usuario')}!`;
+    usuario.innerHTML = `¡Bienvenido <a href="../pages/cuenta.html"><b>${localStorage.getItem('usuario')}</b></a>!`;
+    usuarioMob.innerHTML = `¡Bienvenido <a href="../pages/cuenta.html"><b>${localStorage.getItem('usuario')}</b></a>!`;
 }
 let registradoEnSs = sessionStorage.getItem('registrado');
 if (registradoEnSs){
     let usuario = document.getElementById('usuario');
     let usuarioMob = document.getElementById('usuarioMob');
-    usuario.innerText = `¡Bienvenido ${sessionStorage.getItem('usuario')}!`;
-    usuarioMob.innerText = `¡Bienvenido ${sessionStorage.getItem('usuario')}!`;
+    usuario.innerHTML = `¡Bienvenido <a href="../pages/cuenta.html"><b>${sessionStorage.getItem('usuario')}</b></a>!`;
+    usuarioMob.innerHTML = `¡Bienvenido <a href="../pages/cuenta.html"><b>${sessionStorage.getItem('usuario')}</b></a>!`;
 }
 
 //Antes de reservar, verifica que este logeado

@@ -16,3 +16,6 @@ btnLogin.onclick = () =>{
         window.location.href='../../index.html';   
     }   
 };
+
+let registro = document.getElementById('registro');
+registro.onclick = () => {window.location.href='../../pages/registro.html';};

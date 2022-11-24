@@ -15,6 +15,11 @@ p, b{
 
 a {
   text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+a:hover{
+  color: rgb(255, 255, 255);
 }
 
 .nav-link{
@@ -125,6 +130,8 @@ h1{
   border-radius: 5rem;
   padding: 5px;
   border: none;
+  text-align: center;
+  width: 12rem;
 }
 
 .sub-btn{
@@ -180,4 +187,18 @@ h1{
 
 .card-img{
   height: 20rem;
+}
+
+.user-icon{
+  font-size: 5rem;
+  color: rgba(65, 42, 15, 0.85);
+}
+
+#cerrar-sesion{
+  color: rgb(230, 13, 13);
+  cursor: pointer;
+}
+
+#registro{
+  cursor: pointer;
 }
