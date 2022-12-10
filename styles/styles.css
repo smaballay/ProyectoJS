@@ -88,6 +88,14 @@ h1{
   box-shadow: 0 0 15px 3px rgba(65, 42, 15, 0.85);
 }
 
+.card-clima{
+  background-color: rgba(100, 65, 25, 0.85);
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 1rem;
+}
+
 .img-cabañas{
   width: 100%;
   height: 100%;
@@ -134,15 +142,6 @@ h1{
   width: 12rem;
 }
 
-.sub-btn{
-  background-color: rgb(124, 81, 31);
-  color: rgb(255, 255, 255);
-  border: none;
-  border-top-right-radius: 5rem;
-  border-end-end-radius: 5rem;
-  padding: 7px;
-}
-
 .btn-light, .btn-brown, .btn-lightbrown{
   border-radius: 5rem;
   padding-left: 10px;
@@ -177,16 +176,12 @@ h1{
   border-radius: 50px;
 }
 
-.login-form{
+.form{
   max-width: 40rem;
 }
 
 .valoresIngresados-container{
   background-color: rgba(186, 124, 53, 0.705);
-}
-
-.card-img{
-  height: 20rem;
 }
 
 .user-icon{
@@ -201,4 +196,13 @@ h1{
 
 #registro{
   cursor: pointer;
+}
+
+.icon-clima{
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+.tachado{
+  text-decoration:line-through;
 }

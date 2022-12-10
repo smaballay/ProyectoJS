@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "img": "../images/cabaña-azul.jpg",
+    "nombre": "Cabaña Azul",
+    "descripcion": "Dos dormitorios: uno con cama matrimonial y otro con cama matrimonial y cucheta. Podrá disfrutar de un amplio living, la cocina comedor y un baño. La arquitectura de esta cabaña es en varios niveles, por lo que no es aconsejable para personas con dificultades físicas o familias con niños pequeños.",
+    "precio": 15000,
+    "capacidadMax": 8
+  },
+  {
+    "id": 2,
+    "img": "../images/cabaña-naranja.jpg",
+    "nombre": "Cabaña Naranja",
+    "descripcion": "Un dormitorio con cama matrimonial y sofá cama para dos personas en el living. Amplia cocina comedor y baño.",
+    "precio": 12500,
+    "capacidadMax": 6
+  },
+  {
+    "id": 3,
+    "img": "../images/cabaña-verde.jpg",
+    "nombre": "Cabaña Verde",
+    "descripcion": "Un dormitorio con cama matrimonial y sofá cama para dos personas en el living. Amplia cocina comedor y baño. Posee comodidades especiales para personas con dificultades motrices.",
+    "precio": 12500,
+    "capacidadMax": 6
+  },
+  {
+    "id": 4,
+    "img": "../images/cabaña-alpina-piedra.jpg",
+    "nombre": "Cabaña Aplina de Piedra",
+    "descripcion": "Un dormitorio con cama matrimonial en el piso superior y sofá cama para dos personas en el living. Amplia cocina comedor y baño en el piso inferior.",
+    "precio": 10000,
+    "capacidadMax": 4
+  },
+  {
+    "id": 5,
+    "img": "../images/cabaña-alpina-madera.jpg",
+    "nombre": "Cabaña Aplina de Madera",
+    "descripcion": "Un dormitorio con cama matrimonial en el piso superior y sofá cama para dos personas en el living. Amplia cocina comedor y baño en el piso inferior.",
+    "precio": 10000,
+    "capacidadMax": 4
+  }
+]
