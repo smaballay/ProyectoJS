@@ -28,8 +28,8 @@ let registradoEnSs = sessionStorage.getItem('registrado');
 if (registradoEnLs=="true" || registradoEnSs=="true"){
     let usuario = document.getElementById('usuario');
     let usuarioMob = document.getElementById('usuarioMob');
-    usuario.innerHTML = `¡Bienvenido <a href="../pages/cuenta.html"><b>${localStorage.getItem('nombre')}</b></a>!`;
-    usuarioMob.innerHTML = `¡Bienvenido <a href="../pages/cuenta.html"><b>${localStorage.getItem('nombre')}</b></a>!`;
+    usuario.innerHTML = `¡Bienvenido <a href="./pages/cuenta.html"><b>${localStorage.getItem('nombre')}</b></a>!`;
+    usuarioMob.innerHTML = `¡Bienvenido <a href="./pages/cuenta.html"><b>${localStorage.getItem('nombre')}</b></a>!`;
 }
 
 //Antes de reservar, verifica que este logeado y que la fecha de egreso sea posterior a la de ingreso. Luego guarda en LS
