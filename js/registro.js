@@ -86,7 +86,7 @@ btnRegistrarse.onclick = () =>{
             localStorage.setItem('apellido', apellidoInput.value);
             localStorage.setItem('email', emailInput.value);
             localStorage.setItem('contraseña', contraseñaInput.value);
-            window.location.href='./index.html';
+            window.location.href='../index.html';
             },
             2000 
         )   
