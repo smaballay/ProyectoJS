@@ -78,4 +78,4 @@ btnLogin.onclick = () =>{
 
 //Boton para volver
 let registro = document.getElementById('registro');
-registro.onclick = () => {window.location.href='../../pages/registro.html';};
+registro.onclick = () => {window.location.href='../ProyectoJS/pages/registro.html';};
