@@ -9,4 +9,4 @@ En una primera instancia, se estableció la paleta de colores y tipografía basa
 
 # Sitio web
 Te invitamos a visitarlo! 
-[Haz click aquí](https://smaballay.github.io/ProyectoFinal/)
+[Haz click aquí](https://smaballay.github.io/ProyectoJS/)
