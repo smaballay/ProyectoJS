@@ -23,7 +23,7 @@ cerrarSesion.onclick = () =>{
         if (result.isConfirmed) {
             localStorage.setItem('registrado', false);
             sessionStorage.setItem('registrado', false);  
-            window.location.href='../../index.html'; 
+            window.location.href='../index.html'; 
         }
     })    
 }

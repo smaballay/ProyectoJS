@@ -56,10 +56,10 @@ btnLogin.onclick = () =>{
             setTimeout(()=>{
                 if(document.querySelector("#checkbox:checked")){    //Guarda "true" en LS si se clickea en "no cerrar sesion"
                     localStorage.setItem('registrado', true);
-                    window.location.href='../../index.html';    
+                    window.location.href='../index.html';    
                 } else{                                             //Caso contrario, se guarda en SS
                     sessionStorage.setItem('registrado', true);
-                    window.location.href='../../index.html';   
+                    window.location.href='../index.html';   
                 } 
                 },
             2000
@@ -78,4 +78,4 @@ btnLogin.onclick = () =>{
 
 //Boton para volver
 let registro = document.getElementById('registro');
-registro.onclick = () => {window.location.href='../ProyectoJS/pages/registro.html';};
+registro.onclick = () => {window.location.href='../pages/registro.html';};
